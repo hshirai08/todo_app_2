@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-// use UsersTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,7 +13,11 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UserSeeder::class);
 
-        // Usersテーブルのシーディングを実行
+        // Usersテーブル
         $this->call(UsersTableSeeder::class);
+        // Foldersテーブル
+        $this->call(FoldersTableSeeder::class);
+        // Tasksテーブル
+        $this->call(TasksTableSeeder::class);
     }
 }
